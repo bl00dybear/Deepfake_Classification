@@ -8,14 +8,14 @@ def torch_seed(seed):
 
     torch.random.seed(seed)
 
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.deterministic=True
+    torch.backends.cudnn.benchmark=False
 
 
 def main():
     torch.manual_seed(42)
 
-    train_loader, valid_loader = load_dataset()
+    train_loader,valid_loader=load_dataset()
 
 
 
